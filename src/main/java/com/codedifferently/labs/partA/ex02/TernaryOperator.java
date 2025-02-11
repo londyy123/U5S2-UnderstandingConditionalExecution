@@ -10,6 +10,8 @@ public class TernaryOperator {
         } else {
             x *= y;
         }
+        x = (y / x < 3) ? (x + y) : (x * y);
+        //result=condition ? value1 : value2
         response += ("After if stmt, x = " + x);
 
         return response;
